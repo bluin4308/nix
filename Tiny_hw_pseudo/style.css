@@ -1,0 +1,66 @@
+body {
+  margin: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  background-color: #dbc089;
+}
+
+.task1 input:checked + label {
+  color: red;
+}
+
+.task2 ul li::marker {
+  content: "👾";
+}
+.task2 ul li::first-letter {
+  font-size: 1.5em;
+  color: red;
+  background-color: aqua;
+}
+.task2 ul li:nth-child(3n) {
+  color: yellow;
+}
+
+.task2 ul li:nth-child(5n):hover {
+  background-color: cadetblue;
+}
+
+p.new::before {
+  content: "⭐";
+}
+
+p.new.back::after {
+  content: "🚀";
+}
+
+.task3 div::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.task3 a:hover::before {
+  content: "::hover ::before content ";
+}
+.task4 a {
+  margin: 20px;
+  display: block;
+}
+.task4 > div {
+  background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+  height: 400px;
+}
+.task4 a[href*="htmlweb"] {
+  color: violet;
+}
+.task4 > div > a[href*="htmlweb"] {
+  background: radial-gradient(circle at 50% 100%, #ee82ee 0%, #00d1ff 100%);
+}
+.task4 div div > a[href$="css"]:hover {
+  border: 5px solid #a46322;
+  border-radius: 20px 0px 20px 0px;
+}
+.task4 div div a::selection {
+  font-weight: bold;
+  color: red;
+  background-color: green;
+}
