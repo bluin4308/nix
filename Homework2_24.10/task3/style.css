@@ -1,0 +1,45 @@
+.container {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.item {
+  color: white;
+  background-color: grey;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.subitem {
+  color: white;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.wide3 {
+  grid-column: span 3;
+}
+
+.wide4 {
+  grid-column: span 4;
+}
+
+.wide2 {
+  grid-column: span 2;
+}
+
+.tall2 {
+  grid-row: span 2;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
